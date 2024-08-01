@@ -14,8 +14,11 @@ const FormPopup = ({ form, onClose, onSave }) => {
         const formData = { name, text, dateTime };
         if (form) {
             await axios.put(`https://form-app-backend.onrender.com/api/forms/${form._id}`, formData);
+            //await axios.put(`http://localhost:5000/api/forms/${form._id}`, formData);
+            
         } else {
             await axios.post('https://form-app-backend.onrender.com/api/forms', formData);
+            //await axios.post('http://localhost:5000/api/forms', formData);
         }
         onSave();
         onClose();
