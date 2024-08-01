@@ -1,0 +1,172 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+/* App.css */
+
+/* Container for the form list */
+.form-list-container {
+  padding: 20px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Styling the table */
+.form-list-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+.form-list-table th, .form-list-table td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+.form-list-table th {
+  background-color: #f4f4f4;
+}
+
+/* Styling the buttons */
+.form-list-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.form-list-buttons button {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  background-color: #007bff;
+  color: #fff;
+  font-size: 16px;
+}
+
+.form-list-buttons button:hover {
+  background-color: #0056b3;
+}
+
+/* DateTimePopup.css */
+.popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.popup-inner {
+  background: white;
+  padding: 20px;
+  border-radius: 5px;
+  width: 300px;
+  text-align: center;
+}
+
+.popup button {
+  background: #007bff;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+/* FormList.css */
+.form-list {
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+.add-button, .view-button, .edit-button, .delete-button {
+  margin-left: 10px;
+  padding: 5px 10px;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+.add-button {
+  background-color: #28a745; /* Green for add */
+}
+
+.view-button {
+  background-color: #007bff; /* Blue for view */
+}
+
+.edit-button {
+  background-color: #ffc107; /* Yellow for edit */
+}
+
+.delete-button {
+  background-color: #dc3545; /* Red for delete */
+}
+
+/* Add styles for the popup if needed */
+/* FormPopup.css */
+.popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.popup-content {
+  background: white;
+  padding: 20px;
+  border-radius: 5px;
+  width: 400px;
+}
+
+.close-button {
+  background: #dc3545;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+}
