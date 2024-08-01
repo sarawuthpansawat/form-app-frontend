@@ -17,7 +17,7 @@ const FormList = () => {
     }, []);
 
     const fetchForms = async () => {
-        const response = await axios.get('http://localhost:5000/api/forms');
+        const response = await axios.get('https://form-app-backend.onrender.com/api/forms');
         setForms(response.data);
     };
 
@@ -32,7 +32,7 @@ const FormList = () => {
     };
 
     const handleDelete = async (id) => {
-        await axios.delete(`http://localhost:5000/api/forms/${id}`);
+        await axios.delete(`https://form-app-backend.onrender.com/api/forms/${id}`);
         fetchForms();
     };
 

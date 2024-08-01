@@ -1,7 +1,7 @@
 import React from 'react';
 import { DndProvider } from 'react-dnd';
 import { HTML5Backend } from 'react-dnd-html5-backend';
-import DraggableComponent from './components/DraggableComponent';
+// import DraggableComponent from './components/DraggableComponent';
 import FormList from './components/FormList';
 
 const App = () => {
